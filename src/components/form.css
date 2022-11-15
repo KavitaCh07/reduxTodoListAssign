@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+}
+
+.form-container{
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+}
+
+input{
+    outline: none;
+    border: 2px solid #47B5FF;
+    /* width: 100%; */
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.add-btn{
+    align-self: flex-start;
+    background-color:rgb(40, 190, 40);
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+}
+
+.add-text{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.show-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.show-data-div {
+    display: flex;
+    width: 90%;
+    align-self: flex-start;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.show-data-box {
+    border: 2px solid rgb(161, 157, 157, 0.3);
+    width: 77%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.remove-btn {
+    display: flex;
+    background-color: rgb(248, 101, 101);
+    border: none;
+    border-radius: 10px;
+    padding: 1.2rem 1.2rem;
+}
+
+.remove-text{
+    color: white;
+    font-size: 1.5rem;
+}
