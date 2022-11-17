@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState} from 'react';
 import { useDispatch } from 'react-redux';
-import { ADD } from '../redux/slice';
+import { ADD, addTodoAsync } from '../redux/slice';
 import './form.css';
 
 
@@ -13,8 +13,9 @@ const Form = () => {
 
     const onSubmit = (event) => {
 		event.preventDefault();
-		dispatch(ADD({
+		dispatch(addTodoAsync({
             title:inputData,
+            setInputData: " ",
             })
         )
 	};

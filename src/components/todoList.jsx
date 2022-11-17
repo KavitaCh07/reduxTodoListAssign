@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import List from './list';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { getTodosAsync } from '../redux/slice';
 
 const TodoList = () => {
-
+     const dispatch = useDispatch();
     const todos = useSelector((state) => state.todos);
+    console.log(todos);
+
+    useEffect(() => {
+      dispatch(getTodosAsync());
+    },[dispatch])
 
     //    todos = [
     //     {id: 1, title: 'todo1'},
@@ -13,10 +19,11 @@ const TodoList = () => {
     // ];
 
   return (
-    
-    {todos.map((todo) => (
-            <List id={todo.id} title={todo.title}/>
-        ))}
+    <div>
+    {todos.map((todo) => {
+      return  <List id={todo&&todo.id} title={todo&&todo.title}/>}
+   )}
+    </div>
       
     
   );
