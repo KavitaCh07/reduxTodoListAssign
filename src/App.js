@@ -7,8 +7,8 @@ import TodoList from './components/todoList';
 function App() {
   return (
     <div className="App">
-      <Form/>
-     <TodoList/>
+      <Form />
+      <TodoList />
     </div>
   );
 }
